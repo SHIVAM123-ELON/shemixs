@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   SHEMIXS DESIGN SYSTEM — Centralized Design Tokens
+   Change brand colors here. All portals inherit from these.
+   ============================================================ */
+
+@layer base {
+  :root {
+    /* ---- Brand / Primary ---- */
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --primary-light: 217 91% 60%;
+    --primary-dark: 224 76% 48%;
+
+    /* ---- Secondary ---- */
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-light: 265 89% 66%;
+    --secondary-dark: 259 84% 52%;
+
+    /* ---- Accent ---- */
+    --accent: 199 89% 48%;
+    --accent-foreground: 210 40% 98%;
+    --accent-light: 201 94% 56%;
+    --accent-dark: 197 87% 42%;
+
+    /* ---- Success ---- */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 145 73% 55%;
+    --success-dark: 139 69% 39%;
+
+    /* ---- Warning ---- */
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 9%;
+    --warning-light: 43 96% 60%;
+    --warning-dark: 32 95% 44%;
+
+    /* ---- Error / Destructive ---- */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --destructive-light: 4 90% 68%;
+    --destructive-dark: 0 72% 51%;
+
+    /* ---- Surfaces ---- */
+    --background: 210 40% 98%;
+    --background-secondary: 210 40% 96%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* ---- Muted ---- */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* ---- Borders & Inputs ---- */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    /* ---- Chart Palette ---- */
+    --chart-1: 221 83% 53%;
+    --chart-2: 262 83% 58%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 142 71% 45%;
+    --chart-5: 38 92% 50%;
+
+    /* ---- Radius ---- */
+    --radius: 0.625rem;
+
+    /* ---- Shadows ---- */
+    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.08);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-glow: 0 0 0 1px rgb(34 197 94 / 0.06), 0 8px 24px rgb(221 83 53 / 0.12);
+
+    /* ---- Sidebar ---- */
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+  }
+
+  .dark {
+    /* ---- Brand / Primary ---- */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --primary-light: 221 83% 65%;
+    --primary-dark: 224 76% 52%;
+
+    /* ---- Secondary ---- */
+    --secondary: 265 89% 66%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-light: 270 91% 73%;
+    --secondary-dark: 259 84% 60%;
+
+    /* ---- Accent ---- */
+    --accent: 201 94% 56%;
+    --accent-foreground: 222 47% 11%;
+    --accent-light: 203 96% 64%;
+    --accent-dark: 197 87% 48%;
+
+    /* ---- Success ---- */
+    --success: 145 73% 55%;
+    --success-foreground: 0 0% 100%;
+    --success-light: 149 76% 63%;
+    --success-dark: 139 69% 45%;
+
+    /* ---- Warning ---- */
+    --warning: 43 96% 60%;
+    --warning-foreground: 48 96% 9%;
+    --warning-light: 46 97% 68%;
+    --warning-dark: 32 95% 52%;
+
+    /* ---- Error / Destructive ---- */
+    --destructive: 4 90% 68%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 8 92% 76%;
+    --destructive-dark: 0 72% 58%;
+
+    /* ---- Surfaces ---- */
+    --background: 222 47% 7%;
+    --background-secondary: 222 44% 10%;
+    --foreground: 210 40% 96%;
+    --card: 222 44% 11%;
+    --card-foreground: 210 40% 96%;
+    --popover: 222 44% 11%;
+    --popover-foreground: 210 40% 96%;
+
+    /* ---- Muted ---- */
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    /* ---- Borders & Inputs ---- */
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 217 91% 60%;
+
+    /* ---- Chart Palette ---- */
+    --chart-1: 217 91% 60%;
+    --chart-2: 265 89% 66%;
+    --chart-3: 201 94% 56%;
+    --chart-4: 145 73% 55%;
+    --chart-5: 43 96% 60%;
+
+    /* ---- Shadows ---- */
+    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.35), 0 2px 4px -2px rgb(0 0 0 / 0.35);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.45), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+    --shadow-glow: 0 0 0 1px rgb(34 197 94 / 0.08), 0 8px 24px rgb(217 91 60 / 0.18);
+
+    /* ---- Sidebar ---- */
+    --sidebar: 222 44% 11%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-border: 217 33% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: hsl(var(--primary) / 0.2);
+    color: hsl(var(--foreground));
+  }
+}
+
+/* ============================================================
+   Typography Utilities
+   ============================================================ */
+@layer components {
+  .text-display {
+    @apply font-bold tracking-tight leading-[1.05];
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+  }
+  .text-headline {
+    @apply font-bold tracking-tight leading-[1.1];
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .text-title {
+    @apply font-semibold tracking-tight leading-tight;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  }
+  .text-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.18em] text-primary;
+  }
+}
+
+/* ============================================================
+   Reusable Surface & Gradient Utilities
+   ============================================================ */
+@layer components {
+  .surface-card {
+    @apply rounded-xl border bg-card text-card-foreground;
+  }
+  .surface-glass {
+    @apply backdrop-blur-xl bg-background/70 border border-border/60;
+  }
+  .gradient-brand {
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--secondary)) 50%,
+      hsl(var(--accent)) 100%
+    );
+  }
+  .gradient-brand-soft {
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--primary) / 0.1) 0%,
+      hsl(var(--secondary) / 0.1) 50%,
+      hsl(var(--accent) / 0.1) 100%
+    );
+  }
+  .text-gradient-brand {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--secondary)) 50%,
+      hsl(var(--accent)) 100%
+    );
+  }
+}
+
+/* ============================================================
+   Scrollbar Styling
+   ============================================================ */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.4);
+    border-radius: 9999px;
+    border: 2px solid hsl(var(--muted));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.6);
+  }
+}
+
+/* ============================================================
+   Focus-visible accessibility
+   ============================================================ */
+@layer base {
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
